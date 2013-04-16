@@ -1,8 +1,8 @@
 //
 //  MixiFirstViewController.m
-//  MixiTabSample
+//  MixiCustomViewContainerSample
 //
-//  Created by 田村 航弥 on 2013/04/11.
+//  Created by 田村 航弥 on 2013/04/12.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
@@ -14,21 +14,19 @@
 
 @implementation MixiFirstViewController
 
--(id)initWithImageName:(NSString *)imageNmae;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:@"MixiFirstViewController" bundle:nil];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = imageNmae;
-        self.tabBarItem.image = [UIImage imageNamed:imageNmae];
-        self.tabBarItem.badgeValue = @"4";
+        // Custom initialization
     }
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
